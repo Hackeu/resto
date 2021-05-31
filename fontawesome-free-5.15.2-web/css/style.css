@@ -1,0 +1,1190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+:root{
+    --firstColor : rgb(0, 183, 255);
+    --secondColor : rgb(20, 86, 102);
+    --thirdColor : rgba(20, 86,102,.4);
+    --fourthColor : rgb(246, 246, 246);
+}
+a{
+    text-decoration: none;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*-----------bannière principale-----------*/
+#home{
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../../images/pexels-tom-fisk-1692693.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+/*----- haut de page -----*/
+#home header{
+    background: var(--firstColor);
+}
+#home header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+#home header p{
+    color: var(--fourthColor);
+    font-weight: bold;
+    margin: 20px;
+    font-family: Poppins;
+}
+#home header h1 a{
+    font-family: Poppins;
+    font-size: 50px;
+    color: var(--fourthColor);
+    margin: 20px;
+}
+/*--X-- haut de page --X--*/
+/*----- menu de navigation -----*/
+#home div nav{
+    background: var(--secondColor);
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#home div nav > label,
+#home div nav > input{
+    display: none;
+}
+#home div nav > ul{
+    display: flex;
+    list-style: none;
+    margin-top: 60px;
+}
+#home div nav ul a,
+#home div nav ul label{
+    margin: 10px;
+    color: var(--fourthColor);
+    font-size: 16px;
+    font-family: Abel;
+}
+#home div nav ul a:hover,
+#home div nav ul label:hover{
+    color: var(--firstColor);
+}
+#home div nav ul li ul{
+    flex-direction: column;
+    background: black;
+    padding: 10px;
+    visibility: hidden;
+    list-style: none;
+    position: relative;
+    z-index: 3;
+}
+#home div nav ul li ul li a{
+    color: aliceblue;
+}
+#home div nav ul li input{
+    display: none;
+}
+#home div nav input:checked ~ ul{
+    visibility: visible;
+    opacity: 1;
+}
+/*--X-- menu de navigation --X--*/
+/*----- bannière d'accueil -----*/
+#home div.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#home div.banner img{
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    position: absolute;
+    left: 43vw;
+}
+#home div.banner div{
+    text-align: center;
+    justify-content: space-around;
+    color: aliceblue;
+    margin: 10px;
+}
+#home div.banner div:nth-child(2){
+    background-color: rgba(18, 187, 230, 0.4);
+    padding: 200px 20px 20px 20px;
+    position: absolute;
+    height: 80vh;
+    width: 98.8vw;
+    top: 18.5vh;
+    z-index: 1;
+}
+#home div.banner div h6{
+    font-size: 20px;
+    margin-top: 40px;
+}
+#home div.banner div h3{
+    font-size: 30px;
+    margin: 5px;
+}
+#home div.banner div p{
+    font-size: 20px;
+}
+#home div.banner div button{
+    margin: 40px;
+    background: transparent;
+    border: none;
+}
+#home div.banner div button a{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: serif;
+    font-size: 20px;
+    transition: all 1s linear;
+    background: var(--secondColor);
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid var(--secondColor);
+}
+#home div.banner div a:hover{
+    background: transparent;
+    border-color: aliceblue;
+}
+/*--X-- bannière d'accueil --X--*/
+/*-----X-----bannière principale-----X-----*/
+
+/*----- Infos -----*/
+#infos > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 100px;
+    position: relative;
+    margin: 100px 10px;
+}
+#infos div .block{
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    height: 5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+/*--X-- Infos --X--*/
+
+/*----- Soins -----*/
+#services{
+    padding: 10px;
+    background-image: url("../../images/pexels-gustavo-fring-3985163.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#services #divBlock{
+    margin: 0px 10px;
+    padding: 0px 100px;
+    background: transparent;
+}
+#services #divBlock #firstDiv{
+    font-size: 30px;
+    font-family: Abel;
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+    top: 100px;
+    color: black;
+}
+#services #divBlock #secondDiv{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+#services #divBlock #secondDiv .blockDiv{
+    text-align: center;
+    background: rgb(20, 86, 102);
+    font-size: 20px;
+    padding: 15px;
+    color: aliceblue;
+}
+#services #divBlock #secondDiv .blockDiv h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#services #divBlock #secondDiv .blockDiv p{
+    font-size: 20px;
+    font-family: Abel;
+}
+/*--X-- Soins --X--*/
+
+/*----- A Propos -----*/
+#about{
+    margin: 100px 0px;
+}
+#about > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#about h3{
+    font-size: 30px;
+}
+#about h3 + div p{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+#about #ref{
+    display: flex;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+#about #ref div{
+    margin: 20px;
+    font-family: serif;
+    background: var(--secondColor);
+    border-radius: 50%;
+    padding: 10px;
+    height: 90px;
+    width: 90px;
+    border: 1px solid var(--secondColor);
+    color: aliceblue;
+    transition: all .1s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+#about #ref div:hover{
+    background: transparent;
+    color: var(--secondColor);
+}
+/*--X-- A Propos --X--*/
+
+/*----- Formulaire rendez-vous -----*/
+#appointment{
+    background: var(--secondColor);
+}
+#appointment > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+}
+#appointment > div h3{
+    font-size: 30px;
+    color: var(--firstColor);
+    margin: 10px;
+}
+#appointment > div form{
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(38, 40, 41, 0.8);
+    padding: 10px;
+    border-radius: 20px;
+}
+#appointment > div form input{
+    padding: 6px;
+    margin: 4px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--firstColor);
+    color: var(--firstColor);
+}
+#appointment > div form input:focus{
+    outline: none;
+}
+#appointment > div form button{
+    width: 30%;
+    padding: 6px;
+    margin: 4px;
+    background: var(--firstColor);
+    color: aliceblue;
+    border: 1px solid var(--firstColor);
+    transition: all 1s ease;
+}
+#appointment > div form button:hover{
+    color: var(--firstColor);
+    background: transparent;
+}
+#appointment > div img{
+    width: 300px;
+    height: 300px;
+}
+/*--X-- Formulaire rendez-vous --X--*/
+
+/*----- Télécharger l'application -----*/
+#application > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#application{
+    margin-bottom: 30px;
+}
+#application h3,
+#application p{
+    margin: 10px;
+}
+#application > div img{
+    width: 200px;
+    height: 200px;
+}
+#application > div > div{
+    text-align: center;
+    margin: 10px;
+}
+#application > div > div a{
+    background: var(--secondColor);
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    margin: 10px;
+    color: aliceblue;
+    transition: all .5 linear;
+    border: 1px solid var(--secondColor);
+}
+#application > div > div a:hover{
+    background: transparent;
+    color: var(--secondColor);
+}
+/*--X-- Télécharger l'application --X--*/
+/*----- Médecins -----*/
+#doctors{
+    background: rgb(191, 213, 231);
+    margin: 100px 0px;
+    padding: 50px;
+}
+#doctors > div{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#doctors #title{
+    background: var(--secondColor);
+    border: 4px solid var(--secondColor);
+    border-left-width: 4px;
+    border-bottom-right-radius:50% ;
+    border-top-right-radius:50% ;
+    padding: 20px 40px 20px 20px;
+    transition: all 1s linear;
+}
+#doctors #title:hover{
+    background: transparent;
+    color: var(--secondColor);
+}
+#doctors #title,
+#doctors #specialists{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    /* border: 1px solid rgb(233, 222, 222); */
+}
+#doctors #title{
+    flex-direction: column;
+    font-size: 30px;
+    font-family: Abel;
+}
+#doctors #specialists img{
+    width: 150px;
+    height: 200px;
+}
+#doctors #specialists h6{
+    font-family: Poppins;
+    color: var(--secondColor);
+}
+#doctors #specialists h4{
+    font-family: Abel;
+    color: black;
+}
+/*--X-- Médecins --X--*/
+
+/*----- Articles de blog -----*/
+#news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#news #title{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    width: 80%;
+}
+#news #articles{
+    width: 80%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin: 50px;
+}
+#news #articles .article{
+    display: block;
+    overflow: hidden;
+    height: 250px;
+}
+/* #news #articles .article::after{
+    content: "";
+    height: 234px;
+    width: 346px;
+    background: rgba(70, 61, 61,.4);
+    position: absolute;
+} */
+#news #articles .article img{
+    width: 100%;
+    height: 250px;
+    opacity: .4;
+    transition: all 1s linear;
+    border-radius: 10px;
+}
+#news #articles .article img:hover{
+    opacity: 1;
+}
+#news #articles .article .description{
+    background: var(--secondColor);
+    height: 250px;
+    padding: 10px;
+    color: aliceblue;
+    font-family: Poppins;
+    position: relative;
+    top: -101%;
+    transition: all 1s linear;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+#news #articles .article:hover .description{
+    visibility: visible;
+    opacity: 1;
+}
+#news #articles .article .description a{
+    color: aquamarine;
+}
+#news #articles .article .description span{
+    font-weight: bolder;
+    font-size: 16px;
+}
+/*--X-- Articles de blog --X--*/
+
+/*----- Contact -----*/
+#contact{
+    background-image: url("../../images/pexels-gustavo-fring-4173249.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#contact #title{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    width: 80%;
+    color: black;
+}
+#contact form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(38, 40, 41, 0.8);
+    padding: 10px;
+    border-radius: 20px;
+}
+#contact form input,
+#contact form textarea{
+    padding: 6px;
+    margin: 4px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--firstColor);
+    color: var(--firstColor);
+    letter-spacing: 1px;
+}
+#contact form button{
+    width: 25%;
+    padding: 10px;
+    margin: 4px;
+    background: var(--firstColor);
+    color: aliceblue;
+    border: 1px solid var(--firstColor);
+    transition: all 1s ease;
+}
+/*--X-- Contact --X--*/
+
+/*----- Chiffres et témoignages -----*/
+#facts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+}
+#facts #chiffres{
+    flex-direction: column;
+    color: var(--secondColor);
+    text-align: center;
+}
+#facts #chiffres > h3{
+    font-size: 40px;
+}
+#facts #chiffres,
+#facts #chiffres #chiffre,
+#facts #temoignage,
+#facts #chiffres #chiffre div h3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+#facts #chiffres #chiffre{
+    justify-content: space-between;
+}
+#facts #chiffres #chiffre div{
+    margin: 15px;
+    text-align: center;
+}
+#facts #chiffres #chiffre div h3{
+    font-family: Poppins;
+    background: var(--secondColor);
+    color: aliceblue;
+    border: 1px solid var(--secondColor);
+    border-radius: 50%;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    transition: all .1s linear;
+}
+#facts #chiffres #chiffre div h3:hover{
+    background: transparent;
+    color: var(--secondColor);
+}
+#facts #chiffres #chiffre div p{
+    font-family: Poppins;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#facts #temoignage{
+    flex-direction: column;
+}
+#facts #temoignage p{
+    margin: 10px;
+    font-size: 20px;
+    font-family: Abel;
+}
+#facts #temoignage img{
+    border-radius: 50%;
+}
+#facts #temoignage div h5{
+    margin-top: 10px;
+}
+/*--X-- Chiffres et témoignages --X--*/
+
+/*----- pied de page -----*/
+footer{
+    padding: 20px 200px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background: rgba(20, 86,102,.9);
+}
+footer > div h2 a{
+    font-family: Poppins;
+    font-size: 50px;
+    color: var(--firstColor);
+}
+footer ul{
+    list-style: none;
+}
+footer div h3{
+    color: var(--firstColor);
+}
+footer a{
+    position: relative;
+    margin-top: 30px;
+    color: black;
+    transition: all .5 linear;
+    font-size: 20px;
+}
+footer a:hover{
+    color: var(--firstColor);
+}
+footer + p{
+    background: var(--firstColor);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 4px;
+}
+/*--X-- pied de page --X--*/
+
+
+/*----- R E S P O N S I V I T E -----*/
+@media screen and (max-width: 2000px){
+    /*----- menu de navigation -----*/
+    #home{
+        background-attachment: unset;
+        height: 100vh;
+    }
+    /*----- bannière d'accueil -----*/
+    #home div.banner img{
+       margin-top: 10px;
+    }
+    #home div.banner div:nth-child(2){
+        background-color: transparent;
+        position: relative;
+        top: -20px;
+    }
+    /*----- Soins -----*/
+    #services #divBlock #firstDiv{
+        color: aliceblue;
+        font-size: 50px;
+        top: 70px;
+    }
+}
+@media screen and (max-width: 1250px){
+     /*----- menu de navigation -----*/
+     #home{
+        background-attachment: unset;
+        height: 60vh;
+    }
+     /*----- bannière d'accueil -----*/
+     #home div.banner img{
+        margin-top: 50px;
+        width: 200px;
+        height: 200px;
+    }
+     #home div.banner div:nth-child(2){
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+    }
+    /*----- Formulaire rendez-vous -----*/
+    #appointment > div form{
+        width: 120%;
+    }
+}
+@media screen and (max-width:1024px){
+    /*----- menu de navigation -----*/
+    #home{
+        height: 50vh;
+    }
+    /*----- bannière d'accueil -----*/
+    #home div.banner img{
+        margin-top: 10px;
+    }
+    #home div.banner div:nth-child(2){
+        top: -50px;
+    }
+    /*----- Soins -----*/
+    #services{
+        background-attachment: unset;
+    }
+    #services #divBlock #firstDiv{
+        color: aliceblue;
+        font-size: 50px;
+        top: 50px;
+    }
+    #services #divBlock #secondDiv{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    /*----- A Propos -----*/
+    #about{
+        margin: 100px;
+    }
+    /*----- Formulaire rendez-vous -----*/
+    #appointment > div{
+        justify-content: space-between;
+    }
+    /*----- Articles de blog -----*/
+    #news #articles{
+        height: 30vh;
+    }
+    #news #articles .article{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    #news #articles .article > div a{
+        opacity: 1;
+        height: 15vh;
+        border-radius: 0px;
+        overflow: hidden;
+    }
+    #news #articles .article img{
+        height: 100%;
+        opacity: 1;
+        border-radius: 0px;
+    }
+    #news #articles .article .description{
+        display: block;
+        height: 100%;
+        top: 0%;
+        text-align: left;
+        opacity: 1;
+        visibility: visible;
+        border-radius: 0px;
+        font-size: 14px;
+    }
+    #contact{
+        background-attachment: unset;
+    }
+}
+@media screen and (max-width: 930px){
+    /*----- bannière d'accueil -----*/
+    #home div.banner img{
+        margin-top: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    #home div.banner div:nth-child(2){
+        background-color: transparent;
+        position: relative;
+        top: -100px;
+    }
+    /*----- Soins -----*/
+     #services #divBlock #firstDiv{
+         color: aliceblue;
+         font-size: 20px;
+         top: 80px;
+    }
+    /*----- Formulaire rendez-vous -----*/
+    #appointment > div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        grid-column-gap: 15px;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+    }
+    #appointment > div h3{
+        font-size: 25px;
+    }
+    #appointment > div form{
+        width: 100%;
+    }
+    /*----- Articles de blog -----*/
+    #news #articles .article .description{
+        font-size: 14px;
+    }
+    /*----- Contact -----*/
+    #contact{
+        background-attachment: unset;
+    }
+}
+@media screen and (max-width: 500px){
+    /*-----------bannière principale-----------*/
+    #home{
+        height: 50vh;
+        background-size: 200%;
+    }
+    #home header img{
+        height: 50px;
+        width: 50px;
+    }
+    #home header h1 a{
+        font-size: 40px;
+    }
+    #home header p{
+        font-size: 10px;
+    }
+    /* ----- menu de navigation ----- */
+    #home div nav{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        height: 6vh;
+    }
+    #home div nav > label{
+        position: absolute;
+        top: 80px;
+        left: 4%;
+        color: aliceblue;
+        display: block;
+        z-index: 5;
+    }
+    #home div nav > ul{
+        background: var(--secondColor);
+        margin-top: 40px;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center ;
+        visibility: hidden;
+        position: absolute;
+        transition: all 1s linear;
+        opacity: 0;
+    }
+    #home div nav > ul #list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: relative;
+    }
+    #home div nav > ul #list label{
+        position: relative;
+        margin: 0px 0px;
+        padding: 0px;
+    }
+    #home div nav > ul #list > a{
+        position: relative;
+        margin: 4px 0px 0px 0px;
+        padding: 0px;
+    }
+    #home div nav > ul li#squad{
+        position: relative;
+        top: -45px;
+    }
+    #home div nav > ul li#ctc{
+        position: relative;
+        top: -45px;
+    }
+    #home div nav ul a,
+    #home div nav ul label{
+        margin-top: 10px;
+        padding: 20px;
+        color: var(--fourthColor);
+        font-size: 16px;
+        font-family: Poppins;
+    }
+    #home div nav ul li ul{
+        position: relative;
+        margin-top: -25px;
+        padding: 0px;
+    }
+    #home div nav ul li ul li{
+        margin: 5px;
+    }
+    #home div nav ul li ul li a{
+        font-size: 20px;
+    }
+    #home div nav input:checked ~ ul{
+        visibility: visible;
+    }
+    /*----- bannière d'accueil -----*/
+    #home div.banner img{
+        height: 50px;
+        width: 50px;
+        margin-top: 30px;
+        left: 45vw;
+    }
+    #home div.banner div{
+        margin-top: 0%;
+    }
+    #home div.banner div h6{
+        font-size: 10px;
+        margin-top: -15px;
+    }
+    #home div.banner div h3{
+        font-size:15px;
+        margin: 5px;
+    }
+    #home div.banner div p{
+        font-size: 10px;
+    }
+    #home div.banner div button{
+        background: transparent;
+        border: none;
+    }
+    #home div.banner div button a{
+        height: 50%;
+        width: 50%;
+        position: relative;
+        top: -20px;
+        text-decoration: none;
+        color: aliceblue;
+        font-family: serif;
+        font-size: 12px;
+        transition: all 1s linear;
+        background: var(--secondColor);
+        padding: 5px;
+        margin: 20px;
+        border: 1px solid var(--secondColor);
+    }
+    /*----- Infos -----*/
+    #infos{
+        margin: 0px;
+        margin-bottom: 20px;
+        height: 10vh;
+        position: relative;
+    }
+    #infos > div{
+        grid-gap: 10px;
+        margin: 30px 10px;
+    }
+    #infos div .block{
+        font-size: 10px;
+    }
+    /*----- Soins -----*/
+    #services{
+        background-size: 150%;
+        overflow: hidden;
+    }
+    #services #divBlock{
+        padding: 0px 10px;
+    }
+    #services #divBlock #firstDiv{
+        top: 40px;
+    }
+    #services #divBlock #secondDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        position: relative;
+        top: -50px;
+    }
+    #services #divBlock #secondDiv .blockDiv{
+        text-align: center;
+        background: rgb(20, 86, 102);
+        padding: 10px;
+        color: aliceblue;
+    }
+    #services #divBlock #secondDiv .blockDiv h4{
+        font-size: 15px;
+    }
+    #services #divBlock #secondDiv .blockDiv p{
+        font-size: 10px;
+    }
+    /*----- A Propos -----*/
+    #about{
+        margin: 50px 50px;
+    }
+    #about #ref div{
+        height: 90px;
+        width: 90px;
+    }
+    /*----- Formulaire rendez-vous -----*/
+    #appointment > div{
+        display: flex;
+        flex-direction: column;
+    }
+    #appointment > div form button{
+        width: 30%;
+    }
+    /*----- Médecins -----*/
+    #doctors{
+        background: rgb(191, 213, 231);
+        margin: 50px 0px;
+    }
+    #doctors > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #doctors #title{
+        background: transparent;
+        border: none;
+        transition: all 1s linear;
+        position: relative;
+        top: -1em;
+    }
+    #doctors #specialists img{
+        width: 100px;
+        height: 150px;
+    }
+    /*----- Articles de blog -----*/
+    #news #articles{
+        height: 100vh;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    #news #articles .article > div{
+        height: 20vh;
+    }
+    #news #articles .article .description{
+        font-size: 12px;
+        padding-bottom: 40px;
+    }
+    /*----- Contact -----*/
+    #contact{
+        overflow: hidden;
+        background-size: 200%;
+    }
+    #contact form{
+        width: 100%;
+    }
+    /*----- Chiffres et témoignages -----*/
+    #facts{
+        display: flex;
+        flex-direction: column;
+    }
+    /*----- pied de page -----*/
+    footer{
+        padding: 20px 100px;
+        flex-direction: column;
+    }
+    footer > div h2 a{
+        font-family: Poppins;
+        font-size: 30px;
+        color: var(--firstColor);
+    }
+    footer > div h2 a img{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 400px){
+     /*-----------bannière principale-----------*/
+     #home{
+        background-size: 200%;
+     }
+     #home header img{
+        height: 40px;
+        width: 40px;
+    }
+    #home header h1 a{
+        font-size: 30px;
+    }
+    #home header p{
+        font-size: 10px;
+    }
+    /* ----- menu de navigation ----- */
+    #home div nav > label{
+        position: absolute;
+        top: 65px;
+        left: 4%;
+        color: aliceblue;
+        display: block;
+        z-index: 5;
+    }
+    /*----- bannière d'accueil -----*/
+    #home div.banner img{
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        left: 45vw;
+    }
+    #home div.banner div h6{
+        font-size: 10px;
+        margin-top: -35px;
+    }
+    #home div.banner div h3{
+        font-size:15px;
+        margin: 5px;
+    }
+    #home div.banner div p{
+        font-size: 10px;
+    }
+    #home div nav > ul{
+        margin-top: 35px;
+    }
+    /*----- Soins -----*/
+    #services #divBlock #firstDiv{
+        top: 40px;
+    }
+    #services #divBlock #secondDiv .blockDiv h4{
+        font-size: 12px;
+    }
+    #services #divBlock #secondDiv .blockDiv p{
+        font-size: 8px;
+    }
+    /*----- A Propos -----*/
+    #about h3 + div p{
+        font-size: 14px;
+    }
+    #about #ref div{
+        font-size: 14px;
+        padding: 2px;
+        margin: 10px;
+        height: 70px;
+        width: 70px;
+    }
+    /*----- Formulaire rendez-vous -----*/
+    #appointment > div h3{
+        font-size: 20px;
+    }
+    #appointment > div form button{
+        width: 50%;
+    }
+    /*----- Articles de blog -----*/
+    #news #articles .article{
+        height: 300px;
+    }
+   /*----- Contact -----*/
+   #contact #title{
+       font-size: 20px;
+   }
+   #contact form button{
+       width: 50%;
+   }
+   /*----- Chiffres et témoignages -----*/
+   #facts #chiffres > h3{
+        font-size: 20px;
+    }
+    #facts #chiffres #chiffre div{
+        margin: 14px 0px;
+    }
+    #facts #chiffres #chiffre div h3{
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+    #facts #chiffres #chiffre div p{
+        font-size: 15px;
+    }
+}
